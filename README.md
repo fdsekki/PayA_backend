@@ -1,12 +1,25 @@
 # PayA_backend
-This repository works on the testnet of the stellar developer foundations and has the basics of transactions, anchor creation and transactions.
+This repository works on the testnet of the stellar developer foundations and has the basics of anchor creation and transactions.
 
+# Try it out
+```git clone https://github.com/fdsekki/PayA_backend.git```
 
-First of all you have to run node scripts/sender-receiver/0_createAccount.js to create the accounts, next will be node scripts/sender-receiver/1_fundAccounts.js. 
-Now we can create the test anchor and play with it. Run node scripts/stellar-asset/balances.js to check every account and they're state. 
-node scripts/stellar-asset/1_changeTrust.js
-node scripts/stellar-asset/2_createAsset.js
-node scripts/stellar-asset/3_lockIssuingAccount.js
-node scripts/stellar-asset/4_tokenDistribution.js
-node scripts/stellar-asset/5_purchaseToken.js
-node scripts/stellar-asset/balances.js -> here we can see the usd anchor in the sender account, from here we can make the transaction to the receiver with 3_makeTransaction.
+1. Run cmd/terminal in the cloned folder.
+
+~ To crate a transaction between two accounts:
+2. ```node scripts/0_createAccount.js```
+3. ```node scripts/1_fundAccounts.js```
+4. ```node scripts/2_checkBalances.js```
+5. ```node scripts/sender-receiver/3_makeTransaction.js```
+6. ```node scripts/2_checkBalances.js```
+
+~ To create an anchor, purchase it and the send it to another user:
+2. ```node scripts/0_createAccount.js```
+3. ```node scripts/1_fundAccounts.js```
+4. ```node scripts/2_checkBalances.js```
+5. ```node scripts/anchor-creation/1_changeTrust.js```
+6. ```node scripts/anchor-creation/2_createAsset.js```
+7. ```node scripts/anchor-creation/3_lockIssuingAccount.js```
+8. ```node scripts/anchor-creation/4_tokenDistribution.js```
+9. ```node scripts/anchor-creation/5_purchaseToken.js```
+10. ```node scripts/2_checkBalances.js```
