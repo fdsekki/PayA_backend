@@ -1,6 +1,6 @@
 const fetch = require("node-fetch") // for https request agains friendbot for funding accounts
 const fs = require("fs")
-const accounts = require("../../accounts.json")
+const accounts = require("../accounts.json")
 
 const fundAccounts = async accounts => {
         await Promise.all(
